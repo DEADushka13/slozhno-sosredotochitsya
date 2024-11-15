@@ -2,3 +2,9 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root{
+  --header-disc-color:#FF8DCB;
+  --header-title-color:#FFC2E6;
+  --accent-color:#FF8DCB;
+
+}
