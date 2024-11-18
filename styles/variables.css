@@ -2,8 +2,18 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
-  --header-disc-color:#FF8DCB;
-  --header-title-color:#FFC2E6;
-  --accent-color:#FF8DCB;
+:root {
+  --header-disc-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --header-title-font-size: 116px;
+  --header-title-line-height: 95.7px;
+  --page-background-color:#fff1f7;
+  --header-padding:10px;
+  --header-background-image:url("../images/cover-image-light.png");
+  --decorated-zone-left:330px;
+  --main-color: #353430;
+  --header-title-padding-top:66px;
+  --header-title-padding-bot:55px;
+  --header-menu-margin-top:40px;
 }
