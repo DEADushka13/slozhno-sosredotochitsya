@@ -8,12 +8,58 @@
   --accent-color: #ff8dcb;
   --header-title-font-size: 116px;
   --header-title-line-height: 95.7px;
-  --page-background-color:#fff1f7;
-  --header-padding:10px;
-  --header-background-image:url("../images/cover-image-light.png");
-  --decorated-zone-left:330px;
+  --page-background-color: #fff1f7;
+  --header-padding: 10px;
+  --main-padding: 0px 10px 0px 10px;
+  --header-background-image: url("../images/cover-image-light.png");
+  --decorated-zone-left: 330px;
   --main-color: #353430;
-  --header-title-padding-top:66px;
-  --header-title-padding-bot:55px;
-  --header-menu-margin-top:40px;
+  --main-text-size: 18px;
+  --header-title-padding: 66px 0px 0px 0px;
+  --header-gap: 55px;
+  --header-menu-margin-top: 40px;
+  --header-margin-bot: 31px;
+  --page-max-width: 375px;
+  --main-row-gap: 50px;
+  --section-columns: 355px;
+  --section-row-gap: 20px;
+  --section-col-gap:0px;
+  --text-line-height: 23.4px;
+  --card-row-gap: 10px;
+  --cars-row-gap: 20px;
+  --subcards--row-gap: 10px;
+  --card-image-margin-top: 30px;
+  --card-image-row-gap: 10px;
+  --footer-padding: 10px 10px 0px 10px;
+  --footer-title-padding: 250px;
+  --page-padding: 10px solid transparent;
+  --header-title-left: 0px;
+  --header-title-letter-spacing: 0px;
+  --header-disc-margin: 0px;
+  --card-grid-column-start:1;
+  --one-column-grid-template:1fr;
+  --page-row-gap:40px;
+  --card-image-template-columns:100%;
+}
+@media (width>375px) {
+  :root {
+    --page-max-width: 768px;
+    --page-padding: 20px solid transparent;
+    --decorated-zone-left: 708px;
+    --header-padding: 20px;
+    --header-title-padding: 175px 0px 0px 0px;
+    --header-menu-margin-top: 147px;
+    --header-title-left: -20px;
+    --header-title-letter-spacing: 2px;
+    --header-disc-margin: 112px 0px 106px 364px;
+    --section-columns: 1fr 2fr;
+    --main-padding: 0px 20px 0px 20px;
+    --section-col-gap:20px;
+    --card-grid-column-start:2;
+    --one-column-grid-template:1fr 1fr 1fr 1fr;
+    --page-row-gap:60px;
+    --main-row-gap:80px;
+    --card-image-margin-top: 60px;
+    --card-image-template-columns:1fr 1fr 1fr;
+  }
 }
