@@ -23,12 +23,12 @@
   --main-row-gap: 50px;
   --section-columns: 355px;
   --section-row-gap: 20px;
-  --section-col-gap:0px;
+  --section-col-gap: 0px;
   --text-line-height: 23.4px;
   --card-row-gap: 10px;
   --cars-row-gap: 20px;
   --subcards--row-gap: 10px;
-  --card-image-margin-top: 30px;
+  --card-image-margin-top: 10px;
   --card-image-row-gap: 10px;
   --footer-padding: 10px 10px 0px 10px;
   --footer-title-padding: 250px;
@@ -36,10 +36,10 @@
   --header-title-left: 0px;
   --header-title-letter-spacing: 0px;
   --header-disc-margin: 0px;
-  --card-grid-column-start:1;
-  --one-column-grid-template:1fr;
-  --page-row-gap:40px;
-  --card-image-template-columns:100%;
+  --card-grid-column-start: 1;
+  --one-column-grid-template: 1fr;
+  --page-row-gap: 40px;
+  --card-image-template-columns: 100%;
 }
 @media (width>375px) {
   :root {
@@ -54,12 +54,15 @@
     --header-disc-margin: 112px 0px 106px 364px;
     --section-columns: 1fr 2fr;
     --main-padding: 0px 20px 0px 20px;
-    --section-col-gap:20px;
-    --card-grid-column-start:2;
-    --one-column-grid-template:1fr 1fr 1fr 1fr;
-    --page-row-gap:60px;
-    --main-row-gap:80px;
+    --section-col-gap: 20px;
+    --card-grid-column-start: 2;
+    --one-column-grid-template: 1fr 1fr 1fr 1fr;
+    --page-row-gap: 60px;
+    --main-row-gap: 80px;
     --card-image-margin-top: 60px;
-    --card-image-template-columns:1fr 1fr 1fr;
+    --card-image-template-columns: 1fr 1fr 1fr;
+    --card-image-margin-top: 20px;
+    --footer-title-padding: 418px;
+    --footer-padding: 10px 20px 0px 20px;
   }
 }
