@@ -1,3 +1,9 @@
+/* @import url("desktop.css") screen and (min-width: 1024px);
+@import url("mobile.css") screen and (max-width: 768px); */
+/* <link rel="stylesheet" href="print.css" media="print">
+<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)"> */
+
+
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
@@ -285,4 +291,9 @@ a {
   .footer__title {
     text-align: center;
   }
+}
+
+.theme_dark{
+  --page-background-color: #000028;
+  
 }
