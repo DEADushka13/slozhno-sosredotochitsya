@@ -1,5 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
+:root{
+  --header-disc-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --page-background-color: #fff1f7;
+  --header-background-image: url("../images/cover-image-light.png");
+  --main-color: #353430;
+}
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }

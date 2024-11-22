@@ -3,15 +3,32 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root{
+/* :root{
   --header-disc-color:#FF0070;
   --header-title-color:#DB00FF;
   --accent-color:#FF0070;
-}
+  --header-background-image: url("../images/cover-image-dark.png");
+} */
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --header-disc-color:#FF0070;
+  --header-title-color:#DB00FF;
+  --accent-color:#FF0070;
+  --header-background-image: url("../images/cover-image-dark.png");
 }
+
+/* <link rel="stylesheet" href="./base/base.css">
+<link rel="stylesheet" media="(width < 768px)" href="./mobile/mobile.css">
+<link rel="stylesheet" media="(768px <= width < 1024px)" href="./tablet/tablet.css">
+<link rel="stylesheet" media="(width >= 1024px)" href="./desktop/desktop.css">
+
+<link rel="stylesheet" media="(prefers-color-scheme: light)" href="./theme/light/theme-light.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./theme/dark/theme-dark.css">
+<link rel="stylesheet" media="(prefers-reduced-motion: no-preference)" href="./animation/animation.css">
+<link rel="stylesheet" media="(resolution >= 2x)" href="./retina/retina.css">
+<link rel="stylesheet" media="(pointer: course)" href="./touch/touch.css">
+<link rel="stylesheet" media="print" href="./print/print.css">  */

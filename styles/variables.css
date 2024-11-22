@@ -3,17 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
-  --header-disc-color: #ff8dcb;
-  --header-title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
+
   --header-title-font-size: 116px;
   --header-title-line-height: 95.7px;
-  --page-background-color: #fff1f7;
   --header-padding: 10px;
   --main-padding: 0px 10px 0px 10px;
-  --header-background-image: url("../images/cover-image-light.png");
   --decorated-zone-left: 330px;
-  --main-color: #353430;
+
   --main-text-size: 18px;
   --header-title-padding: 66px 0px 0px 0px;
   --header-gap: 55px;
