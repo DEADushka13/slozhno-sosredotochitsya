@@ -19,6 +19,11 @@
   --header-title-color:#DB00FF;
   --accent-color:#FF0070;
   --header-background-image: url("../images/cover-image-dark.png");
+  --main-color: #F1B2CE;
+  --page-background-color: #000028;
+  --header-disc-text-color:#000028;
+  --menu-color:#FF0070;
+  ;
 }
 
 /* <link rel="stylesheet" href="./base/base.css">

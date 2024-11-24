@@ -6,6 +6,8 @@
   --page-background-color: #fff1f7;
   --header-background-image: url("../images/cover-image-light.png");
   --main-color: #353430;
+  --header-disc-text-color:#353430;
+  --menu-color:#353430;
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
