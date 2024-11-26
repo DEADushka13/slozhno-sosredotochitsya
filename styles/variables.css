@@ -3,7 +3,6 @@
   и их переопределение под различные устройства
 */
 :root {
-
   --header-title-font-size: 116px;
   --header-title-line-height: 95.7px;
   --header-padding: 10px;
@@ -35,7 +34,9 @@
   --one-column-grid-template: 1fr;
   --page-row-gap: 40px;
   --card-image-template-columns: 100%;
+  --rec-display: none;
 }
+
 @media (width>375px) {
   :root {
     --page-max-width: 768px;
@@ -61,6 +62,7 @@
     --footer-padding: 10px 20px 0px 20px;
   }
 }
+
 @media (width>768px) {
   :root {
     --page-max-width: 1024px;

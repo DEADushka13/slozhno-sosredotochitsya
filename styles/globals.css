@@ -3,7 +3,6 @@
 /* <link rel="stylesheet" href="print.css" media="print">
 <link rel="stylesheet" href="tablet.css" media="screen and (max-width: 1024px)"> */
 
-
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
@@ -67,6 +66,7 @@ a {
   display: grid;
   grid-template-columns: 100%;
   row-gap: var(--page-row-gap);
+  background-attachment: fixed;
 }
 .decorated-zone {
   border: var(--page-padding);
@@ -100,30 +100,32 @@ a {
   border-color: var(--menu-color);
 }
 
-.decorate-rec::before{
+.decorate-rec::before {
   content: "REC";
-  display: block;
-  color:var(--menu-color);
-  position: static;
-  left: -40px;
+  display: var(--rec-display);
+  color: var(--menu-color);
+  position: absolute;
+  left: -43px;
+  top: -8px;
   font-family: IBM Plex Mono;
-font-size: 18px;
-font-weight: 400;
-line-height: 25px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
-.decorate-rec{
+.decorate-rec {
   /* content: ""; */
   position: absolute;
-  display: block;
+  display: var(--rec-display);
+  left: 347px;
+  top: 18px;
   width: 9px;
   height: 9px;
-  background-color: #FF0070;
+  background-color: #ff0070;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px #FF0070;
+  box-shadow: 0px 0px 4px 2px #ff0070;
 }
 /*--------------------HEADER--------------------*/
 .header__title {
@@ -142,6 +144,7 @@ text-decoration-skip-ink: none;
   background-image: var(--header-background-image);
   background-size: cover;
   background-position: center;
+  height: 100%;
   /* background-repeat: no-repeat; */
   /* padding: 10px; */
 }
@@ -166,7 +169,7 @@ text-decoration-skip-ink: none;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--menu-color);
 }
 
 .header__container {
@@ -264,6 +267,9 @@ text-decoration-skip-ink: none;
   width: 100%;
 }
 
+.footer {
+  height: 100%;
+}
 .footer__title {
   padding-top: var(--footer-title-padding);
   padding-bottom: var(--footer-title-padding);
@@ -275,47 +281,4 @@ text-decoration-skip-ink: none;
   position: relative;
   letter-spacing: var(--header-title-letter-spacing);
   text-align: center;
-}
-
-@media (width>375px) {
-  .card-images {
-    gap: 20px;
-  }
-  .img {
-    width: 100%;
-    height: 100%;
-  }
-  .img__sunset {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .img__ice-cream {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  .img__tape {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
-  }
-  .img__books {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .img__street {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-  .footer__title {
-    text-align: center;
-  }
 }
