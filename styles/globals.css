@@ -148,7 +148,7 @@ a {
   background-repeat: no-repeat;
   /* padding: 10px; */
 }
-.header__theme-menu{
+.header__theme-menu {
   width: var(--menu-width);
 }
 .header__theme-menu-list {
@@ -271,7 +271,7 @@ a {
   width: 100%;
 }
 
-footer {
+.footer {
   height: 100vh;
 }
 .footer__title {
