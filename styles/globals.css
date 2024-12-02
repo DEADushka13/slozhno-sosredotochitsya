@@ -271,8 +271,8 @@ a {
   width: 100%;
 }
 
-.footer {
-  height: 100%;
+footer {
+  height: 100vh;
 }
 .footer__title {
   padding-top: var(--footer-title-padding);
