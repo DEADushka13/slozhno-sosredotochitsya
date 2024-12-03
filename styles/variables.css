@@ -84,6 +84,9 @@
   .header{
     height: min(100vh,768px);
   }
+  .footer{
+    height: min(100vh,768px);
+  }
   .header__discription {
     width: 47.7vw;
   }
