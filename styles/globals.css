@@ -272,8 +272,7 @@ a {
 }
 
 .footer {
-  max-height: 100vh;
-  height: 100vh;
+  min-height: 100vh;
 }
 .footer__title {
   padding-top: var(--footer-title-padding);
