@@ -81,6 +81,9 @@
     --menu-flex-direction: row;
     --menu-width: calc(100vw - 40px);
   }
+  .header{
+    height: min(100vh,768px);
+  }
   .header__discription {
     width: 47.7vw;
   }
