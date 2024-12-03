@@ -40,6 +40,8 @@
   --header-padding: 10px;
   --footer-height: min(100vh, 688px);
   --footer-padding: 10px;
+  --rec-left: 347px;
+  --rec-top: 19px;
 }
 
 @media (width>375px) {
