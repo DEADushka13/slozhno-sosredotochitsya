@@ -15,17 +15,17 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --header-disc-color:#FF0070;
-  --header-title-color:#DB00FF;
-  --accent-color:#FF0070;
+  --header-disc-color: #ff0070;
+  --header-title-color: #db00ff;
+  --accent-color: #ff0070;
   --header-background-image: url("../images/cover-image-dark.png");
-  --main-color: #F1B2CE;
+  --main-color: #f1b2ce;
   --page-background-color: #000028;
-  --header-disc-text-color:#000028;
-  --menu-color:#FF0070;
-  --rec-display:block;
-  --main-section-title-color:#FF0070;
-  --card-title-color:#000028;
+  --header-disc-text-color: #000028;
+  --menu-color: #ff0070;
+  --rec-display: block;
+  --main-section-title-color: #ff0070;
+  --card-title-color: #000028;
 }
 
 /* <link rel="stylesheet" href="./base/base.css">

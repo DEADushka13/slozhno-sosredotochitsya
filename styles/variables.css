@@ -61,8 +61,8 @@
     --card-image-margin-top: 20px;
     --footer-title-padding: 418px;
     --footer-padding: 10px 20px 0px 20px;
-    --rec-left:730px;
-    --rec-top:29px;
+    --rec-left: 730px;
+    --rec-top: 29px;
   }
   .header {
     height: min(100vh, 1024px);
@@ -85,8 +85,8 @@
     --footer-title-padding: 314px;
     --menu-flex-direction: row;
     --menu-width: calc(100vw - 40px);
-    --rec-top:28px;
-    --rec-left:986px;
+    --rec-top: 28px;
+    --rec-left: 986px;
   }
   .header {
     height: min(100vh, 768px);

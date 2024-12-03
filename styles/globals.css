@@ -76,9 +76,6 @@ a {
   display: none;
 }
 
-.decorated-zone {
-  /* border: var(--page-padding); */
-}
 .decorated-zone::before {
   content: "";
   display: block;
@@ -247,6 +244,7 @@ a {
 
 .block__title {
   font-weight: 400;
+  color: var(--card-title-color);
 }
 
 .card {
