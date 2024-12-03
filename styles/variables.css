@@ -48,7 +48,7 @@
     --header-menu-margin-top: 147px;
     --header-title-left: -20px;
     --header-title-letter-spacing: 2px;
-    --header-disc-margin: 112px 0px 106px 364px;
+    --header-disc-margin: 112px 0px 135px 364px;
     --section-columns: 1fr 2fr;
     --main-padding: 0px 20px 0px 20px;
     --section-col-gap: 20px;
@@ -61,6 +61,8 @@
     --card-image-margin-top: 20px;
     --footer-title-padding: 418px;
     --footer-padding: 10px 20px 0px 20px;
+    --rec-left:730px;
+    --rec-top:29px;
   }
   .header {
     height: min(100vh, 1024px);

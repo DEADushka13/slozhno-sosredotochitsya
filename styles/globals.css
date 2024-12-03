@@ -220,10 +220,12 @@ a {
 
 .main__title {
   font-weight: 700;
+  color: var(--main-section-title-color);
 }
 
 .card__title {
   font-weight: 700;
+  color: var(--card-title-color);
 }
 
 .text__link {
