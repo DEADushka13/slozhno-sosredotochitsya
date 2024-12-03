@@ -68,7 +68,14 @@ a {
   grid-template-columns: 100%;
   row-gap: var(--page-row-gap);
   background-attachment: fixed;
+  /* -ms-overflow-style: none; 
+  scrollbar-width: none;  */
 }
+/* Для браузеров Chrome, Safari и Opera */
+.page::-webkit-scrollbar {
+  display: none;
+}
+
 .decorated-zone {
   /* border: var(--page-padding); */
 }
@@ -79,6 +86,9 @@ a {
   height: 25px;
   width: 25px;
   left: var(--decorated-zone-left);
+  /* right: 200px; */
+  /* left: 200px; */
+  /* top: 20px; */
   border-top: 1px;
   border-right: 1px;
   border-bottom: 0px;
@@ -91,6 +101,9 @@ a {
   content: "";
   display: block;
   position: relative;
+  left: 0px;
+  /* bottom: 0px; */
+  /* top: 0px; */
   height: 25px;
   width: 25px;
   border-top: 0px;
@@ -120,8 +133,8 @@ a {
   /* content: ""; */
   position: absolute;
   display: var(--rec-display);
-  left: 347px;
-  top: 18px;
+  left: var(--rec-left);
+  top: var(--rec-top);
   width: 9px;
   height: 9px;
   background-color: #ff0070;
@@ -147,7 +160,7 @@ a {
   background-position: center;
   /* height: 100%; */
   background-repeat: no-repeat;
-  /* padding: 10px; */
+  padding: 20px;
   max-height: 100%;
 }
 .header__theme-menu {
@@ -182,7 +195,7 @@ a {
   display: grid;
   grid-template-columns: 100%;
   row-gap: var(--header-gap);
-  margin-bottom: var(--header-margin-bot);
+  /* margin-bottom: var(--header-margin-bot); */
 }
 
 .header__discription {
@@ -275,9 +288,6 @@ a {
 
 .footer {
   max-height: 100%;
-  /* min-height: 100vh;
-  margin-top: 0px;
-  margin-bottom: 0px; */
 }
 .footer__title {
   padding-top: var(--footer-title-padding);
