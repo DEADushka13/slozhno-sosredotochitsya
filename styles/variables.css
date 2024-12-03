@@ -29,13 +29,17 @@
   --page-padding: 10px solid transparent;
   --header-title-left: 0px;
   --header-title-letter-spacing: 0px;
-  --header-disc-margin: 0px;
+  --header-disc-margin: 0px 0px 33px 0px;
   --card-grid-column-start: 1;
   --one-column-grid-template: 1fr;
   --page-row-gap: 40px;
   --card-image-template-columns: 100%;
   --rec-display: none;
   --menu-flex-direction: column;
+  --header-height:min(100vh, 688px);
+  --header-padding:10px;
+  --footer-height:min(100vh, 688px);
+  --footer-padding:10px;
 }
 
 @media (width>375px) {
@@ -87,12 +91,10 @@
     --menu-width: calc(100vw - 40px);
     --rec-top: 28px;
     --rec-left: 986px;
-  }
-  .header {
-    height: min(100vh, 768px);
-  }
-  .footer {
-    height: min(100vh, 768px);
+    --header-height:min(100vh, 768px);
+    --header-padding:20px;
+    --footer-height:min(100vh, 768px);
+    --footer-padding:20px;
   }
   .header__discription {
     width: 47.7vw;

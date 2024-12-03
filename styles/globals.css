@@ -157,8 +157,10 @@ a {
   background-position: center;
   /* height: 100%; */
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: var(--header-padding);
+  height: var(--header-height);
   max-height: 100%;
+  
 }
 .header__theme-menu {
   width: var(--menu-width);
@@ -288,7 +290,9 @@ a {
 }
 
 .footer {
+  height: var(--footer-height);
   max-height: 100%;
+  padding: var(--footer-padding);
 }
 .footer__title {
   padding-top: var(--footer-title-padding);
