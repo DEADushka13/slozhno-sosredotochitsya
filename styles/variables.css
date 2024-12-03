@@ -63,13 +63,13 @@
     --card-image-margin-top: 60px;
     --card-image-template-columns: 1fr 1fr 1fr;
     --card-image-margin-top: 20px;
-    --footer-title-padding: 430px;
-    --footer-padding: 10px 20px 0px 20px;
+    --footer-title-padding: 420px;
+    --footer-padding: 0px 20px 0px 20px;
     --rec-left: 730px;
     --rec-top: 29px;
-  }
-  .header {
-    height: min(100vh, 1024px);
+    --header-height: min(100vh, 1024px);
+    --footer-height: min(100vh, 1024px);
+    --footer-padding: 20px;
   }
 }
 
