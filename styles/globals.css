@@ -68,8 +68,11 @@ a {
   grid-template-columns: 100%;
   row-gap: var(--page-row-gap);
   background-attachment: fixed;
-  /* -ms-overflow-style: none; 
-  scrollbar-width: none;  */
+  background-image: var(--page-background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 /* Для браузеров Chrome, Safari и Opera */
 .page::-webkit-scrollbar {
@@ -152,11 +155,7 @@ a {
 }
 
 .header {
-  background-image: var(--header-background-image);
-  background-size: cover;
-  background-position: center;
-  /* height: 100%; */
-  background-repeat: no-repeat;
+
   padding: var(--header-padding);
   height: var(--header-height);
   max-height: 100%;

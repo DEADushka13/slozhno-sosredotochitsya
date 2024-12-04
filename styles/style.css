@@ -4,7 +4,7 @@
   --header-title-color: #ffc2e6;
   --accent-color: #ff8dcb;
   --page-background-color: #fff1f7;
-  --header-background-image: url("../images/cover-image-light.png");
+  --page-background-image: url("../images/cover-image-light.png");
   --main-color: #353430;
   --header-disc-text-color: #353430;
   --menu-color: #353430;
@@ -13,4 +13,53 @@
 }
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+
+
+
+
+
+
+@media (width>375px) {
+
+  .card-images {
+    gap: 20px;
+  }
+  .img {
+    height: 100%;
+  }
+  .img__sunset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .img__ice-cream {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .img__tape {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .img__books {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .img__street {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .footer__title {
+    text-align: center;
+  }
 }
