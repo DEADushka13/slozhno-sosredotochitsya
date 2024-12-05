@@ -11,14 +11,264 @@
   --main-section-title-color: #353430;
   --card-title-color: #353430;
 }
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-width: 100vw;
+  max-width: var(--page-max-width);
+  background-color: var(--page-background-color);
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: var(--page-row-gap);
+  background-attachment: fixed;
+  background-image: var(--page-background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+.background__text {
+  background-color: var(--header-disc-color);
+}
 
+.text {
+  font-family: "IBM Plex Mono", sans-serif;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-size: var(--main-text-size);
+  color: var(--main-color);
+  line-height: var(--text-line-height);
+}
 
+.decorated-zone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 90.60vw;
+  border-top: 1px;
+  border-right: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-style: solid;
+  border-color: var(--menu-color);
+}
 
+.decorated-zone::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 1.95vw;
+  /* bottom: 0px; */
+  /* top: 0px; */
+  height: 25px;
+  width: 25px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-style: solid;
+  border-color: var(--menu-color);
+}
 
+.decorate-rec::before {
+  content: "REC";
+  display: var(--rec-display);
+  color: var(--menu-color);
+  position: absolute;
+  left: -43px;
+  top: -8px;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.decorate-rec {
+  /* content: ""; */
+  position: absolute;
+  display: var(--rec-display);
+  left: var(--rec-left);
+  top: var(--rec-top);
+  width: 9px;
+  height: 9px;
+  background-color: #ff0070;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px #ff0070;
+}
+
+.header {
+  padding: var(--header-padding);
+  height: var(--header-height);
+  max-height: 100%;
+}
+
+.header__title {
+  font-size: var(--header-title-font-size);
+  font-weight: 700;
+  line-height: var(--header-title-line-height);
+  color: var(--header-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  padding: var(--header-title-padding);
+  position: relative;
+  left: var(--header-title-left);
+  letter-spacing: var(--header-title-letter-spacing);
+}
+
+.header__theme-menu {
+  width: var(--menu-width);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: var(--menu-flex-direction);
+  gap: 10px;
+  align-items: end;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.header__theme-menu-button {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: lowercase;
+  border: none;
+  color: var(--menu-color);
+  padding: 1.5px 13px 4px 13px;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--menu-color);
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: var(--header-gap);
+  /* margin-bottom: var(--header-margin-bot); */
+}
+
+.header__discription {
+  margin: var(--header-disc-margin);
+  font-weight: 700;
+  color: var(--header-disc-text-color);
+}
+/*--------------------MAIN--------------------*/
+.main__container {
+  padding: var(--main-padding);
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: var(--main-row-gap);
+}
+
+.section__container {
+  display: grid;
+  grid-template-columns: var(--section-columns);
+  row-gap: var(--section-row-gap);
+  column-gap: var(--section-col-gap);
+}
+
+.main__title {
+  font-weight: 700;
+  color: var(--main-section-title-color);
+}
+
+.card__title {
+  font-weight: 700;
+  color: var(--card-title-color);
+}
+
+.text__link {
+  text-shadow: var(--accent-color) 1px 1px;
+}
+
+.text__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
+.text__link:focus {
+  outline: none;
+}
+
+.text__link:focus-visible {
+  outline: var(--main-color) 1px solid;
+}
+
+.block__title {
+  font-weight: 400;
+  color: var(--card-title-color);
+}
+
+.card {
+  grid-column-start: var(--card-grid-column-start);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content;
+  row-gap: var(--card-row-gap);
+}
+.one-column {
+  grid-template-columns: var(--one-column-grid-template);
+}
+
+.full-column {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: var(--cars-row-gap);
+}
+
+.subcard {
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: var(--subcards--row-gap);
+}
+/*-----------------------------------------*/
+.card-images {
+  margin-top: var(--card-image-margin-top);
+  display: grid;
+  grid-template-columns: var(--card-image-template-columns);
+  row-gap: var(--card-image-row-gap);
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.footer {
+  height: var(--footer-height);
+  max-height: 100%;
+  padding: var(--footer-padding);
+}
+
+.footer__title {
+  padding-top: var(--footer-title-padding);
+  padding-bottom: var(--footer-title-padding);
+  font-size: var(--header-title-font-size);
+  font-weight: 700;
+  line-height: var(--header-title-line-height);
+  color: var(--header-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  position: relative;
+  letter-spacing: var(--header-title-letter-spacing);
+  text-align: center;
+}
+.section__container_image {
+  margin-top: -1px;
+}
 
 
 @media (width>375px) {
@@ -61,5 +311,31 @@
   }
   .footer__title {
     text-align: center;
+  }
+
+  .decorated-zone::before{
+    left: 94vw;
+  }
+}
+
+@media (width>768px) {
+  .one-column {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .first-column {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .second-column {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .third-column {
+    grid-column-start: 3;
+    grid-column-end: 4;
   }
 }
