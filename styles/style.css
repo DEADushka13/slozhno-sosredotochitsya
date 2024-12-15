@@ -215,7 +215,7 @@
   grid-template-rows: min-content;
   row-gap: var(--card-row-gap);
 }
-.one-column {
+.section-drop {
   grid-template-columns: var(--one-column-grid-template);
 }
 
@@ -319,7 +319,7 @@
 }
 
 @media (width>768px) {
-  .one-column {
+  .section-drop {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
   }
