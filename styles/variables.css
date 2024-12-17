@@ -3,8 +3,6 @@
   и их переопределение под различные устройства
 */
 :root {
-  --header-title-font-size: 116px;
-  --header-title-line-height: 95.7px;
   --header-padding: 10px;
   --main-padding: 0px 10px 0px 10px;
   --decorated-zone-left: 340px;
@@ -21,14 +19,12 @@
   --text-line-height: 23.4px;
   --card-row-gap: 10px;
   --cars-row-gap: 20px;
-  --subcards--row-gap: 10px;
+  --subcards-row-gap: 10px;
   --card-image-margin-top: 10px;
   --card-image-row-gap: 10px;
   --footer-padding: 10px 10px 0px 10px;
   --footer-title-padding: 250px;
-  --page-padding: 10px solid transparent;
   --header-title-left: 0px;
-  --header-title-letter-spacing: 0px;
   --header-disc-margin: 0px 0px 43px 0px;
   --card-grid-column-start: 1;
   --one-column-grid-template: 1fr;

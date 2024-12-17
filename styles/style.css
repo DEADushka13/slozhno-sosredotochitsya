@@ -1,16 +1,4 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-:root {
-  --header-disc-color: #ff8dcb;
-  --header-title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
-  --page-background-color: #fff1f7;
-  --page-background-image: url("../images/cover-image-light.png");
-  --main-color: #353430;
-  --header-disc-text-color: #353430;
-  --menu-color: #353430;
-  --main-section-title-color: #353430;
-  --card-title-color: #353430;
-}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -48,7 +36,7 @@
   position: absolute;
   height: 25px;
   width: 25px;
-  left: 90.60vw;
+  right: 2.67vw;
   border-top: 1px;
   border-right: 1px;
   border-bottom: 0px;
@@ -76,12 +64,12 @@
 
 .decorate-rec::before {
   content: "REC";
-  display: var(--rec-display);
+  display: none;
   color: var(--menu-color);
   position: absolute;
   left: -43px;
   top: -8px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -93,7 +81,7 @@
 .decorate-rec {
   /* content: ""; */
   position: absolute;
-  display: var(--rec-display);
+  display: none;
   left: var(--rec-left);
   top: var(--rec-top);
   width: 9px;
@@ -106,19 +94,17 @@
 .header {
   padding: var(--header-padding);
   height: var(--header-height);
-  max-height: 100%;
 }
 
 .header__title {
-  font-size: var(--header-title-font-size);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
-  line-height: var(--header-title-line-height);
+  line-height: 0.8;
   color: var(--header-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   padding: var(--header-title-padding);
   position: relative;
   left: var(--header-title-left);
-  letter-spacing: var(--header-title-letter-spacing);
 }
 
 .header__theme-menu {
@@ -143,10 +129,12 @@
   color: var(--menu-color);
   padding: 1.5px 13px 4px 13px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--menu-color);
+  pointer-events: none;
 }
 
 .header__container {
@@ -233,7 +221,7 @@
 .subcard {
   display: grid;
   grid-template-columns: 100%;
-  row-gap: var(--subcards--row-gap);
+  row-gap: var(--subcards-row-gap);
 }
 /*-----------------------------------------*/
 .card-images {
@@ -249,14 +237,19 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: var(--footer-height);
-  max-height: 100%;
   padding: var(--footer-padding);
 }
 
 .footer__title {
-  padding-top: var(--footer-title-padding);
-  padding-bottom: var(--footer-title-padding);
+  /* height: var(--footer-height); */
+  /* padding-top: var(--footer-title-padding);
+  padding-bottom: var(--footer-title-padding); */
+  /* height: var(--header-height); */
   font-size: var(--header-title-font-size);
   font-weight: 700;
   line-height: var(--header-title-line-height);
@@ -264,14 +257,19 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   position: relative;
   letter-spacing: var(--header-title-letter-spacing);
-  text-align: center;
+  /* vertical-align: auto;
+  text-align: center; */
+  /* vertical-align: middle; */
+
 }
 .section__container_image {
   margin-top: -1px;
 }
 
-
 @media (width>375px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 
   .card-images {
     gap: 20px;
@@ -313,9 +311,9 @@
     text-align: center;
   }
 
-  .decorated-zone::before{
+  /* .decorated-zone::before {
     left: 94vw;
-  }
+  } */
 }
 
 @media (width>768px) {

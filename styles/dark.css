@@ -3,13 +3,27 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/* :root{
-  --header-disc-color:#FF0070;
-  --header-title-color:#DB00FF;
-  --accent-color:#FF0070;
-  --header-background-image: url("../images/cover-image-dark.png");
-} */
-
+@media (prefers-color-scheme: dark) {
+  :root {
+    --header-disc-color: #ff0070;
+    --header-title-color: #db00ff;
+    --accent-color: #ff0070;
+    --page-background-image: url("../images/cover-image-dark.png");
+    --main-color: #f1b2ce;
+    --page-background-color: #000028;
+    --header-disc-text-color: #000028;
+    --menu-color: #ff0070;
+    --rec-display: block;
+    --main-section-title-color: #ff0070;
+    --card-title-color: #000028;
+  }
+  .decorate-rec {
+    display: block;
+  }
+  .decorate-rec::before {
+    display: block;
+  }
+}
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -28,14 +42,10 @@
   --card-title-color: #000028;
 }
 
-/* <link rel="stylesheet" href="./base/base.css">
-<link rel="stylesheet" media="(width < 768px)" href="./mobile/mobile.css">
-<link rel="stylesheet" media="(768px <= width < 1024px)" href="./tablet/tablet.css">
-<link rel="stylesheet" media="(width >= 1024px)" href="./desktop/desktop.css">
+.page.theme_dark .decorate-rec {
+  display: block;
+}
 
-<link rel="stylesheet" media="(prefers-color-scheme: light)" href="./theme/light/theme-light.css">
-<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./theme/dark/theme-dark.css">
-<link rel="stylesheet" media="(prefers-reduced-motion: no-preference)" href="./animation/animation.css">
-<link rel="stylesheet" media="(resolution >= 2x)" href="./retina/retina.css">
-<link rel="stylesheet" media="(pointer: course)" href="./touch/touch.css">
-<link rel="stylesheet" media="print" href="./print/print.css">  */
+.page.theme_dark .decorate-rec::before {
+  display: block;
+}
