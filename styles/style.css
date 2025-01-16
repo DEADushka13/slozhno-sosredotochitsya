@@ -45,6 +45,8 @@
   border-color: var(--menu-color);
 }
 
+
+
 .decorated-zone::after {
   content: "";
   display: block;
@@ -59,7 +61,12 @@
   border-style: solid;
   border-color: var(--menu-color);
 }
-
+.footer.decorated-zone::after {
+  top: -10px;
+}
+.footer.decorated-zone::before{
+  top: 10px;
+}
 .decorate-rec::before {
   content: "REC";
   display: none;
@@ -263,14 +270,14 @@
   position: relative;
   letter-spacing: var(--header-title-letter-spacing);
 }
- main+.decorated-zone::after{
+main + .decorated-zone::after {
   position: relative;
   align-self: flex-start;
-} 
-main+.decorated-zone::before{
+}
+main + .decorated-zone::before {
   position: relative;
   align-self: flex-end;
-} 
+}
 @media (width>375px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
