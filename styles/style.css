@@ -45,8 +45,6 @@
   border-color: var(--menu-color);
 }
 
-
-
 .decorated-zone::after {
   content: "";
   display: block;
@@ -64,7 +62,7 @@
 .footer.decorated-zone::after {
   top: -10px;
 }
-.footer.decorated-zone::before{
+.footer.decorated-zone::before {
   top: 10px;
 }
 .decorate-rec::before {
@@ -282,16 +280,32 @@ main + .decorated-zone::before {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
+
+  .header__theme-menu {
+    padding-top: 172px;
+  }
+
   .decorate-rec {
     right: 30px;
   }
+
   .decorated-zone::before {
     right: 20px;
   }
+  .decorated-zone::after {
+    left: 20px;
+  }
 
+  .footer.decorated-zone::before {
+    top: 20px;
+  }
+  .footer.decorated-zone::after {
+    top: -20px;
+  }
   .card-images {
     gap: 20px;
   }
+
   .img {
     height: 100%;
   }
@@ -331,6 +345,12 @@ main + .decorated-zone::before {
 }
 
 @media (width>768px) {
+  .header__theme-menu {
+    padding-top: 0px;
+  }
+  .footer__title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
   .section-drop {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
