@@ -2,8 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-width: 100vw;
-  max-width: var(--page-max-width);
+  /* max-width: var(--page-max-width); */
   background-color: var(--page-background-color);
   display: grid;
   grid-template-columns: 100%;
@@ -13,7 +12,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .background__text {
@@ -260,7 +258,7 @@
 }
 
 .footer__title {
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 0.82;
   color: var(--header-title-color);
