@@ -2,8 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-width: 100vw;
-  max-width: var(--page-max-width);
+  /* max-width: var(--page-max-width); */
   background-color: var(--page-background-color);
   display: grid;
   grid-template-columns: 100%;
@@ -13,7 +12,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .background__text {
@@ -59,7 +57,12 @@
   border-style: solid;
   border-color: var(--menu-color);
 }
-
+.footer.decorated-zone::after {
+  top: -10px;
+}
+.footer.decorated-zone::before {
+  top: 10px;
+}
 .decorate-rec::before {
   content: "REC";
   display: none;
@@ -245,7 +248,7 @@
 }
 
 .footer__title {
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 0.82;
   color: var(--header-title-color);
@@ -271,7 +274,16 @@
   .decorated-zone::before {
     right: 20px;
   }
+  .decorated-zone::after {
+    left: 20px;
+  }
 
+  .footer.decorated-zone::before {
+    top: 20px;
+  }
+  .footer.decorated-zone::after {
+    top: -20px;
+  }
   .card-images {
     gap: 20px;
   }
@@ -337,6 +349,12 @@
   }
   .header__discription {
     width: 47.7vw;
+  }
+  .header__theme-menu {
+    padding-top: 0px;
+  }
+  .footer__title{
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .section-drop {
     display: grid;
