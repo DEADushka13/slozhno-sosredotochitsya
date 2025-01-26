@@ -16,6 +16,7 @@
     --main-section-title-color: #353430;
     --card-title-color: #353430;
     --menu-color:#32312d66;
+    --menu-accent-color: rgba(50, 49, 45, 0.4);
   }
   .decorate-rec {
     display: none;
@@ -40,6 +41,7 @@
   --menu-color: #353430;
   --main-section-title-color: #353430;
   --card-title-color: #353430;
+  --menu-accent-color: rgba(50, 49, 45, 0.4);
 }
 .page.theme_light .decorate-rec {
   display: none;
