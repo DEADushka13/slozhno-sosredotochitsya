@@ -7,7 +7,6 @@
   --main-text-size: 18px;
   --header-title-padding: 70px 0px 0px 0px;
   --header-gap: 55px;
-  --page-max-width: 375px;
   --main-row-gap: 50px;
   --section-columns: clamp(355px, 95vw);
   --section-row-gap: 20px;
@@ -21,7 +20,6 @@
   --header-disc-margin: 0px 0px 30px 0px;
   --card-grid-column-start: 1;
   --section-drop-grid-template: 1fr;
-  --page-row-gap: 40px;
   --card-image-template-columns: 100%;
   --menu-flex-direction: column;
   --header-padding: 10px 10px 35px 10px;
@@ -31,7 +29,6 @@
 
 @media (width>375px) {
   :root {
-    --page-max-width: 768px;
     --header-padding: 20px;
     --header-title-padding: 175px 0px 0px 0px;
     --header-title-left: -20px;
@@ -55,13 +52,10 @@
 
 @media (width>768px) {
   :root {
-    --page-max-width: 1024px;
     --header-title-color: #ffc2e6;
     --accent-color: #ff0070;
     --header-title-padding: 272px 0px 0px 0px;
     --header-title-letter-spacing: 0px;
-    --header-disc-margin: 60px 0px 90px 493px;
-    --header-disc-margin: 60px 0px 90px 493px;
     --section-row-gap: 20px;
     --section-col-gap: 10px;
     --menu-flex-direction: row;

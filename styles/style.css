@@ -2,11 +2,10 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /* max-width: var(--page-max-width); */
   background-color: var(--page-background-color);
   display: grid;
   grid-template-columns: 100%;
-  row-gap: var(--page-row-gap);
+  row-gap: 6vh;
   background-attachment: fixed;
   background-image: var(--page-background-image);
   background-size: cover;
@@ -89,6 +88,7 @@
 
 .header {
   padding: var(--header-padding);
+  /* display: flex; */
 }
 
 .header__title {
@@ -152,11 +152,9 @@
 }
 
 .header__discription {
-  margin: var(--header-disc-margin);
+  margin-bottom: 30px;
   font-weight: 700;
   color: var(--header-disc-text-color);
-  /* display: inline-block;
-  position: static; */
 }
 /*--------------------MAIN--------------------*/
 .main__container {
@@ -218,7 +216,7 @@
   grid-template-columns: var(--section-drop-grid-template);
   row-gap: 20px;
 }
-.drop-cards{
+.drop-cards {
   display: grid;
   row-gap: 20px;
 }
@@ -329,7 +327,7 @@
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     padding: 436px 0 416px 0;
   }
-  }
+}
 
 @media (width>768px) {
   .header__theme-menu {
