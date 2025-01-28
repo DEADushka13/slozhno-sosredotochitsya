@@ -256,7 +256,7 @@
 }
 
 @media (width>375px) {
-  .page{
+  .page {
     row-gap: 8.105vh;
   }
   .header__title {
@@ -341,7 +341,7 @@
 }
 
 @media (width>768px) {
-  .page{
+  .page {
     row-gap: 11.068vh;
   }
   .header__theme-menu {
