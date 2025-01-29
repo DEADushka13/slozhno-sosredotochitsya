@@ -129,7 +129,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--menu-accent-color);
+  border: 1px solid var(--menu-hover-color);
 }
 
 .header__theme-menu-button:focus {

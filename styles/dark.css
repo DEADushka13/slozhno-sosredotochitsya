@@ -17,6 +17,7 @@
     --main-section-title-color: #ff0070;
     --card-title-color: #000028;
     --menu-accent-color: #ff007066;
+    --menu-hover-color: rgba(255, 0, 112, 0.4);
   }
   .decorate-rec {
     display: block;
@@ -42,6 +43,7 @@
   --main-section-title-color: #ff0070;
   --card-title-color: #000028;
   --menu-accent-color: #ff007066;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
 }
 
 .page.theme_dark .decorate-rec {

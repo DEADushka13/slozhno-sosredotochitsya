@@ -15,8 +15,8 @@
     --menu-color: #353430;
     --main-section-title-color: #353430;
     --card-title-color: #353430;
-    --menu-color:#32312d66;
-    --menu-accent-color: rgba(50, 49, 45, 0.4);
+    --menu-accent-color: #353430;
+    --menu-hover-color: rgba(50, 49, 45, 0.4);
   }
   .decorate-rec {
     display: none;
@@ -38,10 +38,11 @@
   --page-background-image: url("../images/cover-image-light.png");
   --main-color: #353430;
   --header-disc-text-color: #353430;
-  --menu-color: #353430;
   --main-section-title-color: #353430;
   --card-title-color: #353430;
-  --menu-accent-color: rgba(50, 49, 45, 0.4);
+  --menu-color: #353430;
+  --menu-accent-color: #353430;
+  --menu-hover-color: rgba(50, 49, 45, 0.4);
 }
 .page.theme_light .decorate-rec {
   display: none;
