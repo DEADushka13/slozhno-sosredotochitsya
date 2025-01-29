@@ -14,7 +14,7 @@
 }
 
 .background__text {
-  background-color: var(--header-disc-color);
+  background-color: var(--accent-color);
 }
 
 .text {
@@ -155,7 +155,7 @@
 .header__discription {
   margin-bottom: 30px;
   font-weight: 700;
-  color: var(--header-disc-text-color);
+  color: var(--card-title-color);
 }
 /*--------------------MAIN--------------------*/
 .main__container {
@@ -174,7 +174,7 @@
 
 .main__title {
   font-weight: 700;
-  color: var(--main-section-title-color);
+  color: var(--menu-color);
 }
 
 .card__title {
@@ -189,7 +189,7 @@
 
 .text__link:hover {
   text-decoration: none;
-  border-bottom: 1px solid var(--text-link-hover);
+  border-bottom: 1px solid var(--main-color);
 }
 
 .text__link:focus {
@@ -218,7 +218,7 @@
   grid-template-columns: 100%;
   row-gap: var(--cars-row-gap);
 }
-/*-----------------------------------------*/
+
 .card-images {
   margin-top: var(--card-image-margin-top);
   display: grid;
@@ -367,6 +367,5 @@
   }
   .footer__title {
     padding: 294px 0 274px 0;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
