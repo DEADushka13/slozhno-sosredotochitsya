@@ -17,10 +17,12 @@
     --card-title-color: #353430;
     --menu-accent-color: #353430;
     --menu-hover-color: rgba(50, 49, 45, 0.4);
+    --text-link-hover: rgba(53, 52, 48, 1);
   }
   .decorate-rec {
     display: none;
   }
+
   .decorate-rec::before {
     display: none;
   }
@@ -43,6 +45,7 @@
   --menu-color: #353430;
   --menu-accent-color: #353430;
   --menu-hover-color: rgba(50, 49, 45, 0.4);
+  --text-link-hover: rgba(53, 52, 48, 1);
 }
 .page.theme_light .decorate-rec {
   display: none;

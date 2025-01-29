@@ -189,7 +189,7 @@
 
 .text__link:hover {
   text-decoration: none;
-  border-bottom: 1px solid var(--menu-accent-color);
+  border-bottom: 1px solid var(--text-link-hover);
 }
 
 .text__link:focus {

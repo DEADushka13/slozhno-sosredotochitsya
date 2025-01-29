@@ -18,6 +18,7 @@
     --card-title-color: #000028;
     --menu-accent-color: #ff007066;
     --menu-hover-color: rgba(255, 0, 112, 0.4);
+    --text-link-hover: rgba(241, 178, 206, 1);
   }
   .decorate-rec {
     display: block;
@@ -44,6 +45,7 @@
   --card-title-color: #000028;
   --menu-accent-color: #ff007066;
   --menu-hover-color: rgba(255, 0, 112, 0.4);
+  --text-link-hover: rgba(241, 178, 206, 1);
 }
 
 .page.theme_dark .decorate-rec {
