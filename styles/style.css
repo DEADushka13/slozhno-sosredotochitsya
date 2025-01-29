@@ -212,10 +212,6 @@
   row-gap: var(--card-row-gap);
 }
 
-.drop-cards {
-  display: grid;
-  row-gap: 20px;
-}
 .cards {
   display: grid;
   grid-template-columns: 100%;
