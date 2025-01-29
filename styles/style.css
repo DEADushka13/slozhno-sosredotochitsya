@@ -147,7 +147,6 @@
 
 .header__container {
   display: grid;
-  /* justify-content: right; */
   grid-template-columns: 100%;
   row-gap: var(--header-gap);
 }
@@ -212,11 +211,7 @@
   grid-template-rows: min-content;
   row-gap: var(--card-row-gap);
 }
-.section-drop {
-  display: grid;
-  grid-template-columns: var(--section-drop-grid-template);
-  row-gap: 20px;
-}
+
 .drop-cards {
   display: grid;
   row-gap: 20px;
@@ -284,6 +279,7 @@
   .card-images {
     gap: 20px;
   }
+
   .section-drop {
     display: flex;
     flex-direction: column;
