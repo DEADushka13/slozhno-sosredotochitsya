@@ -88,7 +88,7 @@
 
 .header {
   padding: var(--header-padding);
-  height: var(--header-footer-height);
+
   /* display: flex; */
 }
 
@@ -148,6 +148,7 @@
 
 .header__container {
   display: grid;
+  height: var(--header-footer-height);
   grid-template-columns: 100%;
   row-gap: var(--header-gap);
 }
