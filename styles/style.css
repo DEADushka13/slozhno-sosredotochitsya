@@ -148,7 +148,7 @@
 
 .header__container {
   display: grid;
-  height: var(--header-footer-height);
+  /* height: var(--header-footer-height); */
   grid-template-columns: 100%;
   row-gap: var(--header-gap);
 }
@@ -176,6 +176,7 @@
 .main__title {
   font-weight: 700;
   color: var(--menu-color);
+  overflow: hidden;
 }
 
 .card__title {
@@ -230,6 +231,22 @@
 .img {
   object-fit: cover;
   width: 100%;
+}
+
+.img__sunset {
+  max-height: 142px;
+}
+.img__ice-cream {
+  max-height: 355px;
+}
+.img__tape {
+  max-height: 237px;
+}
+.img__books {
+  max-height: 355px;
+}
+.img__street {
+  max-height: 237px;
 }
 
 .footer {
@@ -295,30 +312,35 @@
     height: 100%;
   }
   .img__sunset {
+    max-height: 192px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
   }
   .img__ice-cream {
+    max-height: 441px;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
   }
   .img__tape {
+    max-height: 568px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
   }
   .img__books {
+    max-height: 230px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
   }
   .img__street {
+    max-height: 318px;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 3;
@@ -365,6 +387,21 @@
   }
   .card {
     flex-basis: calc(100% / 3);
+  }
+  .img__sunset {
+    max-height: 260px;
+  }
+  .img__ice-cream {
+    max-height: 595px;
+  }
+  .img__tape {
+    max-height: 768px;
+  }
+  .img__books {
+    max-height: 315px;
+  }
+  .img__street {
+    max-height: 428px;
   }
   .footer__title {
     padding: 294px 0 274px 0;
